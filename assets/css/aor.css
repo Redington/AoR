@@ -1,0 +1,58 @@
+.intro{
+
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+.left{
+    text-align: left;
+}
+
+.white{
+    color: whitesmoke;
+}
+.red{
+    color: #EE2E22;
+}
+
+.highlight{
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #000000;
+    padding: 15px;
+    opacity: .5;
+}
+
+
+
+/*.banner-container::after{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*background-color: #5a5a5a;*/
+    /*background: url("../img/slide-2.jpg");*/
+    /*background-size: 1280px 852px;*/
+    /*background-repeat: no-repeat;*/
+    /*display: block;*/
+    /*background: url("../img/slide-2.jpg") no-repeat center top;*/
+    /*background-size:cover;*/
+    /*padding-bottom: 20px;*/
+    /*opacity: 0.5;*/
+    /*height: 800px;*/
+    /*width: 100%;*/
+    /*content: "";*/
+
+    /*top: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+/*}*/
+
+/*#bannertext{*/
+    /*color: white;*/
+    /*letter-spacing: 2px;*/
+    /*font-weight: 900;*/
+    /*font-size: 1.5em;*/
+    /*line-height: 1em;*/
+/*}*/
