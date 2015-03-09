@@ -76,7 +76,9 @@
                 <p class="intro highlight white"><strong>We are not saving enough.</strong></p>
 
                 <p class="intro white left last">More then ever before we are responsible for our financial future. The age of responsibility has begun, but are we ready? Join the conversation at <b>#AgeofResponsibility</b></p>
-                <p><button class="btn btn-lg btn-clear btn-design" data-toggle="modal" data-target="#execDownload">Download The Executive Summary</button></p>
+
+                <p><button class="btn btn-lg btn-clear btn-design" data-toggle="modal" data-target="#tomorrow">Download The Full Report</button></p>
+
                 <p class="white text-muted">Scroll down to get a sneak peak inside.</p>
                  <p class="white text-muted"><i class="ion-arrow-down-b"></i></p>
 
@@ -110,7 +112,8 @@
                   <p>On the 1st of April 2015 the rules change. The pension reforms announced a year ago come into effect. We will now have choice and <b><i>uncertainty</i></b>. Gone are the days when your pension promised a defined benefit. You contribute now, and hope it will be enough then. The hard truth is, for most people, it won’t be. </p>
                   <p >At Redington we long for a day when <b><i>everyone</i></b> (and we mean everyone) will <b><i>feel confident</i></b> and <b><i>in control</i></b> of their <b><i>financial future</i></b>. This is why we have gathered together some leading thinkers to explore how we might surmount this impending crisis.</p>
                   <p ><strong>The <span class="red">Age</span> Of Responsibility</strong> report is a <b>first step</b> in opening up this conversation. It is a <b>first step</b> toward focusing our society on the problem. We hope it is the <b>first step</b> toward solving it.</p>
-                  <p><button class="btn btn-lg btn-design btn-dark btn-block" data-toggle="modal" data-target="#fullDownload">Download The Full Report</button></p>
+                  <p><button class="btn btn-lg btn-design btn-dark btn-block" data-toggle="modal" data-target="#tomorrow">Download The Full Report</button></p>
+
                   <p>You can get an overview and executive summaries further down this page.</p>
               </div>
               <div class="col-md-6">
@@ -329,10 +332,7 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 w centered">
 					<h5 class="mb">Want To Know Our Latest News?</h5>
-					<form role="form" action="register.php" method="post" enctype="plain"> 
-	    				<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-						<button class='btn btn-lg btn-clear subscribe-submit' type="submit">Subscribe</button>
-					</form>
+                    <a href="https://my.leadpages.net/leadbox/1422c6d73f72a2%3A100bcd31fb46dc/5636953047302144/" target="_blank" class="btn red-background aor-btn">Click Here to Join The Conversation</a><script data-leadbox="1422c6d73f72a2:100bcd31fb46dc" data-url="https://my.leadpages.net/leadbox/1422c6d73f72a2%3A100bcd31fb46dc/5636953047302144/" data-config="%7B%7D" type="text/javascript" src="//my.leadpages.net/leadbox-899.js"></script>
 				</div><!--/col-md-6-->
 			</div><!--/row -->
 			<div class="row mtb">
@@ -351,12 +351,36 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 centered">
 					<h6>COPYRIGHT 2014 | Redington Ltd.</h6>
+                    <h6>Disclaimer</h6>
+                    <p>Opinions expressed on this site and in any corresponding comments are the personal opinions of the original authors, not of Redington Limited. Some of the individuals contributing to this site, including any moderators, work for Redington Limited. The content is provided for informational purposes only and is not meant to be an endorsement or representation by Redington Limited or any other party. This site is available to the public. No information you consider confidential should be posted to this site. By posting you agree to be solely responsible for the content of all information you contribute, link to, or otherwise upload to the Website and release Redington Limited from any liability related to your use of the Website. You also grant to Redington Limited a worldwide, perpetual, irrevocable, royalty-free and fully-paid, transferable (including rights to sublicense) right to exercise all copyright, publicity, and moral rights with respect to any original content you provide.</p>
 				</div>
 			</div>
 		</div>
 	</div><!--/copyright -->
 
     <!-- *********** MODAL FORMS ******************** -->
+
+      <div class="modal" id="tomorrow">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Come Back Tomorrow</h4>
+                  </div>
+                  <div class="modal-body">
+
+                      <h2>The download will be available at 10:30am GMT on the 10th March 2015</h2>
+
+                  </div>
+                  <div class="modal-footer">
+                      <center>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          &nbsp;
+                      </center>
+                  </div>
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 
 <form>
     <div class="modal" id="execDownload">
@@ -516,7 +540,7 @@
             self.fullRequested = ko.observable(false);
 
             self.execError = function(data){
-                alert('success' + data);
+                alert('error' + data);
             };
 
             self.execSuccess = function(data){
