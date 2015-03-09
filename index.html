@@ -76,7 +76,7 @@
                 <p class="intro highlight white"><strong>We are not saving enough.</strong></p>
 
                 <p class="intro white left last">More then ever before we are responsible for our financial future. The age of responsibility has begun, but are we ready? Join the conversation at <b>#AgeofResponsibility</b></p>
-                <p><button class="btn btn-lg btn-clear btn-design">Download The Full Report</button></p>
+                <p><button class="btn btn-lg btn-clear btn-design" data-toggle="modal" data-target="#execDownload">Download The Executive Summary</button></p>
                 <p class="white text-muted">Scroll down to get a sneak peak inside.</p>
                  <p class="white text-muted"><i class="ion-arrow-down-b"></i></p>
 
@@ -110,7 +110,7 @@
                   <p>On the 1st of April 2015 the rules change. The pension reforms announced a year ago come into effect. We will now have choice and <b><i>uncertainty</i></b>. Gone are the days when your pension promised a defined benefit. You contribute now, and hope it will be enough then. The hard truth is, for most people, it won’t be. </p>
                   <p >At Redington we long for a day when <b><i>everyone</i></b> (and we mean everyone) will <b><i>feel confident</i></b> and <b><i>in control</i></b> of their <b><i>financial future</i></b>. This is why we have gathered together some leading thinkers to explore how we might surmount this impending crisis.</p>
                   <p ><strong>The <span class="red">Age</span> Of Responsibility</strong> report is a <b>first step</b> in opening up this conversation. It is a <b>first step</b> toward focusing our society on the problem. We hope it is the <b>first step</b> toward solving it.</p>
-                  <p><button class="btn btn-lg btn-design btn-dark btn-block">Download The Full Report</button></p>
+                  <p><button class="btn btn-lg btn-design btn-dark btn-block" data-toggle="modal" data-target="#fullDownload">Download The Full Report</button></p>
                   <p>You can get an overview and executive summaries further down this page.</p>
               </div>
               <div class="col-md-6">
@@ -122,7 +122,7 @@
 
       <!-- ********** / SOCIAL SECTION ********** -->
 
-      <!-- ********** FEATURES ********** -->
+      <!-- ********** LORD HUTTON ********** -->
       <div class="container">
           <div class="row mtb2 centered">
               <div class="col-md-4 ">
@@ -132,7 +132,12 @@
                   <h3>Lord Hutton of Furness</h3>
                   <hr class="aligncenter">
                   <p class="intro left"><b>"How much do I need to save for my retirement?"</b> is a difficult but important question.</p>
-                  <p class="intro left">The UK pension landscape has undergone profound change in the last 30 years. At the heart of the Turner Commission is the idea that <i>the state should no longer be responsible for ensuring adequate income in our retirement</i>. They argue the responsibility should now lay with <i>you and me</i>. Dr Amlan Roy points out that some in the US say you may need to <b><i>save 15% of your income</i></b>. He argues in the UK it may be higher. This is why encouraging more people to save should now be amongst the most important drivers in public policy. This is how we can best prepare ourselves for changes that are coming.</p>
+                  <p class="intro left">
+                      The UK pension landscape has undergone profound change in the last 30 years. At the heart of the Turner Commission is the idea that
+                      <i>the state should no longer be responsible for ensuring adequate income in our retirement</i>. They argue the responsibility should now lay with <i>you and me</i>. Dr Amlan Roy points out that some in the US say you may need to
+                      <b><i>save 15% of your income or more</i></b>. He argues in the UK it may be higher. This is why encouraging more people to save should now be amongst the most important drivers in public policy. This is how we can best prepare
+                      ourselves for changes that are coming.
+                  </p>
               </div><!--/col-md-4-->
 
           </div><!--/row -->
@@ -318,13 +323,6 @@
       </div><!--/container -->
 
 
-
-
-
-
-	
-
-
 	<!-- ********** FOOTER SECTION ********** -->
 	<div id="f">
 		<div class="container">
@@ -357,6 +355,35 @@
 			</div>
 		</div>
 	</div><!--/copyright -->
+
+    <!-- *********** MODAL FORMS ******************** -->
+
+    <div class="modal" id="execDownload">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="assets/img/progressbar.gif" height="70" width="850" class="img-responsive">
+          </div>
+          <div class="modal-body">
+              <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
+              <script>
+                  hbspt.forms.create({
+                      portalId: '499735',
+                      formId: '32e752cf-1c80-48be-bfd5-124c5407cc61'
+                  });
+              </script>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    <!-- *********** /MODAL FORMS ******************** -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
