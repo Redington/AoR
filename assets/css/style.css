@@ -232,16 +232,26 @@ input {
 /* HERO banner with fixed position */
 
 #bannertext {
+    z-index: 2;
     position: fixed;
     top: 3%;
     right: 0;
-    left: 0;
-    z-index: 2;
-    margin: auto;
+    left: 50%;
+    margin-left: -350px;
     max-width: 700px;
     color: #fff;
     text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+    #bannertext {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+
 #bannertext h1 {
     position: relative;
     margin-bottom: 0;
