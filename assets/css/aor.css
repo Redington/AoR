@@ -16,7 +16,7 @@
 }
 
 .red-background{
-    background-attachment: #EE2E22;
+    background-color: #EE2E22 !important;
 }
 
 .highlight{
@@ -27,7 +27,16 @@
     opacity: .5;
 }
 
+.aor-btn{
+    font-weight: bold;
+    color: #000000;
+}
 
+.real-test{
+    float:right;
+    margin-right: 99999px;
+    overflow: hidden;
+}
 
 /*.banner-container::after{*/
     /*position: absolute;*/
