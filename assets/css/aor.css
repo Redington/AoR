@@ -15,6 +15,10 @@
     color: #EE2E22;
 }
 
+.red-background{
+    background-attachment: #EE2E22;
+}
+
 .highlight{
     text-align: center;
     font-size: 1.8em;

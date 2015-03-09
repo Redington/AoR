@@ -358,6 +358,7 @@
 
     <!-- *********** MODAL FORMS ******************** -->
 
+<form>
     <div class="modal" id="execDownload">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -367,23 +368,62 @@
           </div>
           <div class="modal-body">
 
-              <div id="form">
-
-                  <h4>One More Step</h4>
-                  <p><strong>Fill out the form below and we will email you a link to the executive summary.</strong> You will be added to out mailing list but don't worry we won't spam you. If you don't like what we send out, you can always unsubscribe.</p>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="text-center">One More Step ...</h4>
+                  <p><strong>Complete the form and we will email you a link to the executive summary.</strong>
+                      You will be added to our mailing list but don't worry we won't spam you. If you don't like what we send out, you can always unsubscribe - any time.</p>
+                </div>
+              </div>
+              <div class="row">
 
                   <div class="col-md-4">
+                      <center>
                       <img src="assets/img/AoRFullReport.png" height="286" width="204" class="img-responsive">
+                      </center>
                   </div>
                   <div class="col-md-8">
 
-                      <script charset="utf-8" src="//js.hsforms.net/forms/current.js"></script>
-                      <script>
-                          hbspt.forms.create({
-                              portalId: '499735',
-                              formId: '32e752cf-1c80-48be-bfd5-124c5407cc61'
-                          });
-                      </script>
+                      <div class="form-horizontal">
+                          <fieldset>
+
+                              <!-- Text input-->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="email">Email</label>
+                                  <div class="col-md-8">
+                                      <input id="email" name="email" type="text" placeholder="Enter your email" class="form-control input-md" required="Sorry but we need this info to send you the report!" data-bind="value: email">
+                                      <span class="help-block">We will send the download link to this address</span>
+                                  </div>
+                              </div>
+
+                              <!-- Text input-->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="firstName">First Name</label>
+                                  <div class="col-md-8">
+                                      <input id="firstName" name="firstName" type="text" placeholder="" class="form-control input-md" data-bind="value: firstName">
+
+                                  </div>
+                              </div>
+
+                              <!-- Text input-->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="lastName">Last Name</label>
+                                  <div class="col-md-8">
+                                      <input id="lastName" name="lastName" type="text" placeholder="" class="form-control input-md" data-bind="value: lastName">
+
+                                  </div>
+                              </div>
+
+                              <!-- Text input-->
+                              <div class="form-group">
+                                  <label class="col-md-4 control-label" for="companyName">Company Name</label>
+                                  <div class="col-md-8">
+                                      <input id="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" data-bind="value: companyName">
+                                  </div>
+                              </div>
+
+                          </fieldset>
+                      </div>
 
                   </div>
               </div>
@@ -396,13 +436,14 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+              <center>
+            <button type="submit" class="btn btn-block red-background" data-bind="click: submitRequestForExecSummary">Send me the report</button>
+              </center>
           </div>
         </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
-
+</form>
     <!-- *********** /MODAL FORMS ******************** -->
 
     <!-- Bootstrap core JavaScript
@@ -415,6 +456,7 @@
     <script src="assets/js/jquery.cubeportfolio.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/jquery.hammer.min.js"></script>
+      <script src="assets/js/knockout-3.3.0.js"></script>
 
     <script>
     //Superslides 
@@ -436,9 +478,7 @@
 		$('#slides').hammer().on('swiperight', function () {
 		    $(this).superslides('animate', 'prev');
 		});
-    </script>
-    
-    <script>
+
     // Banner text add parallax effect and fade
 	function EasyPeasyParallax() {
 	    scrollPos = $(this).scrollTop();
@@ -455,6 +495,58 @@
 	       EasyPeasyParallax();
 	    });
 	});
+
+
+        // Knockout View Model
+
+
+
+        var ViewModel = function(){
+          var self = this;
+
+            self.email = ko.observable('');
+            self.firstName = ko.observable('');
+            self.lastName = ko.observable('');
+            self.companyName =  ko.observable('');
+
+            self.error = function(data){
+                alert('success' + data);
+            };
+
+            self.success = function(data){
+                alert('error: ' + data);
+            };
+
+            self.submitRequestForExecSummary = function(){
+                var data = {
+                    email : encodeURI(self.email()),
+                    firstName : encodeURI(self.firstName()),
+                    lastName : encodeURI(self.lastName()),
+                    company : encodeURI(self.companyName())
+                };
+
+                var endpoint = "https://forms.hubspot.com/uploads/form/v2/499735/124bfc6b-f192-48cc-b734-a37829c1b8df";
+
+                $.ajax({
+                    type: 'POST',
+                    url: endpoint,
+                    dataType: 'json',
+                    data: data,
+                    success: self.success,
+                    error: self.error,
+                    cache: false
+                });
+            };
+
+            return self;
+        };
+
+    var vm = new ViewModel();
+    ko.applyBindings(vm);
+
+
+
+
     </script>
 
       <script src="//load.sumome.com/" data-sumo-site-id="1a993a9966574179cab30baf27115fb6a712a83dc07b870284d0deb92654b609" async="async"></script>
