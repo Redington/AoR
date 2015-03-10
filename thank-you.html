@@ -70,6 +70,13 @@
                   <h3>Help Spread The Word</h3>
                   <p>We hope this report raises awareness, stimulates discussion and debate and leaves the whole industry feeling energised and inspired to avert this demographic abyss and retirement crisis.</p>
                   <p><a href="http://ctt.ec/Vfb5F">Tweet: The best time to save for a pension is 30 years ago. The second best is now. #AgeOfResponsibility http://ctt.ec/Vfb5F+</a> (click the link to tweet)</p>
+                  <hr/>
+                  <p>Other places you may wish to visit:</p>
+                  <ul>
+                      <li><a href="http://www.redington.co.uk" title="Redington Home Page">Redington - www.redington.co.uk</a></li>
+                      <li><a href="http://blog.redington.co.uk" title="The Redington Blog">The Redington Blog - blog.redington.co.uk</a></li>
+                      <li><a href="http://redstart.redington.co.uk" title="RedSTART">RedSTART - redstart.redington.co.uk</a></li>
+                  </ul>
               </div>
               <div class="col-md-6">
                   <a class="twitter-timeline" href="https://twitter.com/hashtag/ageofresponsibility" data-widget-id="572811013708591104">#ageofresponsibility Tweets</a>
@@ -119,119 +126,7 @@
 		</div>
 	</div><!--/copyright -->
 
-    <!-- *********** MODAL FORMS ******************** -->
 
-      <div class="modal" id="tomorrow">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title">Come Back Tomorrow</h4>
-                  </div>
-                  <div class="modal-body">
-
-                      <h2>The download will be available at 10:30am GMT on the 10th March 2015</h2>
-
-                  </div>
-                  <div class="modal-footer">
-                      <center>
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          &nbsp;
-                      </center>
-                  </div>
-              </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-
-<form>
-    <div class="modal" id="execDownload">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <img src="assets/img/progressbar.gif" height="70" width="850" class="img-responsive" rel="noshare">
-          </div>
-          <div class="modal-body">
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="text-center">One More Step ...</h4>
-                  <p><strong>Complete the form and we will email you a link to the executive summary.</strong>
-                      You will be added to our mailing list but don't worry we won't spam you. If you don't like what we send out, you can always unsubscribe - any time.</p>
-                </div>
-              </div>
-              <div class="row" data-bind="visible: execRequested() === false">
-
-                  <div class="col-md-4">
-                      <center>
-                      <img src="assets/img/AoRFullReport.png" height="286" width="204" class="img-responsive">
-                      </center>
-                  </div>
-                  <div class="col-md-8">
-
-                      <div class="form-horizontal">
-                          <fieldset>
-
-                              <!-- Text input-->
-                              <div class="form-group">
-                                  <label class="col-md-4 control-label" for="email">Email</label>
-                                  <div class="col-md-8">
-                                      <input id="email" name="email" type="email" placeholder="Enter your email" class="form-control input-md" required="Sorry but we need this info to send you the report!" data-bind="value: email">
-                                      <span class="help-block">We will send the download link to this address</span>
-                                  </div>
-                              </div>
-
-                              <!-- Text input-->
-                              <div class="form-group">
-                                  <label class="col-md-4 control-label" for="firstName">First Name</label>
-                                  <div class="col-md-8">
-                                      <input id="firstName" name="firstName" type="text" placeholder="" class="form-control input-md" data-bind="value: firstName">
-
-                                  </div>
-                              </div>
-
-                              <!-- Text input-->
-                              <div class="form-group">
-                                  <label class="col-md-4 control-label" for="lastName">Last Name</label>
-                                  <div class="col-md-8">
-                                      <input id="lastName" name="lastName" type="text" placeholder="" class="form-control input-md" data-bind="value: lastName">
-
-                                  </div>
-                              </div>
-
-                              <!-- Text input-->
-                              <div class="form-group">
-                                  <label class="col-md-4 control-label" for="companyName">Company Name</label>
-                                  <div class="col-md-8">
-                                      <input id="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" data-bind="value: companyName">
-                                  </div>
-                              </div>
-
-                          </fieldset>
-                      </div>
-
-                  </div>
-              </div>
-
-              <div id="thank-you" class="row"  data-bind="visible: execRequested">
-                <h2>Thank you!</h2>
-              </div>
-              <div class="real-test">
-                  <input id="real-test" name="real-test" type="text"  data-bind="value: real">
-              </div>
-
-          </div>
-          <div class="modal-footer">
-              <center>
-            <button type="submit" class="btn btn-block red-background aor-btn" data-bind="click: submitRequestForExecSummary">Send me the report</button>
-                  &nbsp;
-              </center>
-          </div>
-        </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-</form>
-    <!-- *********** /MODAL FORMS ******************** -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -243,128 +138,6 @@
     <script src="assets/js/jquery.cubeportfolio.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/jquery.hammer.min.js"></script>
-      <script src="assets/js/knockout-3.3.0.js"></script>
-
-    <script>
-    //Superslides 
-		$('#slides').superslides({
-		    slide_easing: 'easeInOutCubic',
-		    slide_speed: 800,
-		    pagination: true,
-		    hashchange: false,
-		    scrollable: true,
-		    animation: 'fade'
-		});
-
-		// Add swipe option
-
-		$('#slides').hammer().on('swipeleft', function () {
-		    $(this).superslides('animate', 'next');
-		});
-
-		$('#slides').hammer().on('swiperight', function () {
-		    $(this).superslides('animate', 'prev');
-		});
-
-    // Banner text add parallax effect and fade
-	function EasyPeasyParallax() {
-	    scrollPos = $(this).scrollTop();
-	    $('#slider').css({
-	        'background-position': '50% ' + (-scrollPos / 4) + "px"
-	    });
-	    $('#bannertext').css({
-	        'margin-top': (scrollPos / 4) + "px",
-	        'opacity': 1 - (scrollPos / 250)
-	    });
-	}
-	$(document).ready(function () {
-	    $(window).scroll(function () {
-	       EasyPeasyParallax();
-	    });
-	});
-
-
-        // Knockout View Model
-
-
-
-        var ViewModel = function(){
-          var self = this;
-
-            self.email = ko.observable('');
-            self.firstName = ko.observable('');
-            self.lastName = ko.observable('');
-            self.companyName =  ko.observable('');
-            self.real =  ko.observable('');
-
-            self.execRequested = ko.observable(false);
-            self.fullRequested = ko.observable(false);
-
-            self.execError = function(data){
-                alert('error' + data);
-            };
-
-            self.execSuccess = function(data){
-                self.execRequested(true);
-            };
-
-            self.submitRequestForExecSummary = function(){
-                var data = {
-                    email : encodeURI(self.email()),
-                    firstName : encodeURI(self.firstName()),
-                    lastName : encodeURI(self.lastName()),
-                    company : encodeURI(self.companyName())
-                };
-
-                var endpoint = "https://forms.hubspot.com/uploads/form/v2/499735/124bfc6b-f192-48cc-b734-a37829c1b8df";
-
-                if(self.real().length === 0){
-                    $.ajax({
-                        type: 'POST',
-                        url: endpoint,
-                        dataType: 'json',
-                        data: data,
-                        success: self.execSuccess,
-                        error: self.execError,
-                        cache: false
-                    });
-                }
-            };
-
-            self.submitRequestForFullReport = function(){
-                var data = {
-                    email : encodeURI(self.email()),
-                    firstName : encodeURI(self.firstName()),
-                    lastName : encodeURI(self.lastName()),
-                    company : encodeURI(self.companyName())
-                };
-
-                var endpoint = "https://forms.hubspot.com/uploads/form/v2/499735/124bfc6b-f192-48cc-b734-a37829c1b8df";
-
-                if(self.real().length === 0){
-                    $.ajax({
-                        type: 'POST',
-                        url: endpoint,
-                        dataType: 'json',
-                        data: data,
-                        success: self.success,
-                        error: self.error,
-                        cache: false
-                    });
-                }
-            };
-
-            return self;
-        };
-
-    var vm = new ViewModel();
-    ko.applyBindings(vm);
-
-
-
-
-    </script>
-
       <script src="//load.sumome.com/" data-sumo-site-id="1a993a9966574179cab30baf27115fb6a712a83dc07b870284d0deb92654b609" async="async"></script>
     
   </body>
